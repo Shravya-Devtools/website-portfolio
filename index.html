@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Management</title>
+    <style>
+        /* Internal CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            margin-top: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>My Portfolio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#investments">Investments</a></li>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="overview">
+            <h2>Portfolio Overview</h2>
+            <p>Welcome to your portfolio management dashboard. Here, you can manage your investments and track your portfolio's performance.</p>
+        </section>
+
+        <section id="investments">
+            <h2>Your Investments</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Asset</th>
+                        <th>Amount</th>
+                        <th>Value</th>
+                        <th>Change</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Stock A</td>
+                        <td>50</td>
+                        <td>$500</td>
+                        <td>+5%</td>
+                    </tr>
+                    <tr>
+                        <td>Bond B</td>
+                        <td>100</td>
+                        <td>$1000</td>
+                        <td>-2%</td>
+                    </tr>
+                    <tr>
+                        <td>Real Estate C</td>
+                        <td>1</td>
+                        <td>$200,000</td>
+                        <td>+10%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="performance">
+            <h2>Performance</h2>
+            <div class="chart">
+                <p>Your portfolio performance over time will be displayed here.</p>
+                <!-- Here you can embed a chart using a library like Chart.js -->
+            </div>
+        </section>
+
+        <section id="settings">
+            <h2>Settings</h2>
+            <form>
+                <label for="currency">Preferred Currency:</label>
+                <select id="currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                </select>
+                <button type="submit">Save Settings</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
